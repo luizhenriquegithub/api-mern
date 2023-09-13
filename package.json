@@ -1,11 +1,11 @@
 {
-  "name": "api-news",
+  "name": "api-mern",
   "version": "1.0.0",
-  "description": "api-news",
+  "description": "api-mern",
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Luiz Henrique",
