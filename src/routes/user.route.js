@@ -1,9 +1,10 @@
 const route = require("express").Router();
 const userController = require("../controllers/user.controller");
+const { validId, validUser } = require("../middlewares/global.middlewares");
 
 route.post("/", userController.create);
 route.get("/", userController.getAll);
-route.get("/:id", userController.getById);
-route.patch("/:id", userController.update);
+route.get("/:id", validId, validUser, userController.getById);
+route.patch("/:id", validId, validUser, userController.update);
 
 module.exports = route;
