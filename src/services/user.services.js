@@ -1,4 +1,4 @@
-const User = require("../models/Users");
+import User from "../models/Users.js";
 
 const create = (body) => {
   return User.create(body);
@@ -14,7 +14,7 @@ const update = (id, name, username, email, password, avatar, background) =>
     { name, username, email, password, avatar, background }
   );
 
-module.exports = {
+export default {
   create,
   getAll,
   getById,
