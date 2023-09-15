@@ -7,3 +7,5 @@ npm i jsonwebtoken
 tokenmd5
 
 //develop
+
+//escopo(macro) => requisito => refinamento 
